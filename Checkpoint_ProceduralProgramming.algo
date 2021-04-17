@@ -1,0 +1,63 @@
+
+//Procedure Dot_Product://
+
+PROCEDURE Dot_Product(ps: INTEGER, P: ARRAY_OF INTEGER[],Q: ARRAY_OF INTEGER[])
+VAR
+    i,j,p,q : INTEGER;
+BEGIN
+    p:=length(P);
+    q:=length(Q);
+    ps:=0;
+    FOR i FROM 0 TO (p-1) DO
+        FOR j FROM 0 TO (q-1))  DO
+            WHILE (i=j) DO
+                ps:=ps+P[i]*Q[j];
+            END_WHILE
+        END_FOR
+    END_FOR
+END
+
+!ALGORITHM Checkpoint_Proced
+VAR
+    V1,V2 : ARRAY_OF INTEGER[];
+    ps : INTEGER;
+BEGIN
+    IF (Dot_Product(ps,V1,V2)=0) THEN
+        write("the two vectors are orthogonal")
+    ELSE 
+        write("the two vectors are not orthogonal")
+    END_IF
+END
+
+//Function Dot_Product://
+
+FUNCTION Dot_Product() : INTEGER
+VAR
+    P,Q: ARRAY_OF INTEGER[];
+BEGIN
+    p:=length(P);
+    q:=length(Q);
+    ps:=0;
+    FOR i FROM 0 TO (p-1) DO
+        FOR j FROM 0 TO (q-1))  DO
+            WHILE (i=j) DO
+                ps:=ps+P[i]*Q[j];
+            END_WHILE
+        END_FOR
+    END_FOR
+    RETURN ps ;
+END
+
+
+!ALGORITHM Checkpoint_Proced
+VAR
+    V1,V2 : ARRAY_OF INTEGER[];
+    ps : INTEGER;
+BEGIN
+    ps:=Dot_Product();
+    IF (ps=0) THEN
+        write("the two vectors are orthogonal")
+    ELSE 
+        write("the two vectors are not orthogonal")
+    END_IF
+END
